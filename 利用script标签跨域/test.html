@@ -1,0 +1,16 @@
+<html>
+ <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />  
+    <script type="text/javascript">  
+        function jsonpCallback(result) {  
+            //alert(result);  
+            for(var i in result) {  
+                alert(i+":"+result[i]);//Ñ­»·Êä³öa:1,b:2,etc.  
+            }  
+        }  
+        var JSONP=document.createElement("script");  
+        JSONP.type="text/javascript";  
+        JSONP.src="http://192.168.21.133/services.php?callback=jsonpCallback";  
+        document.getElementsByTagName("head")[0].appendChild(JSONP);  
+    </script>  
+    
+    </html>
